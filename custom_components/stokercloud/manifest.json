@@ -1,10 +1,10 @@
 {
   "domain": "stokercloud",
-  "name": "StokerCloud",
+  "name": "HAStoker",
   "config_flow": true,
-  "documentation": "https://stokercloud.dk/",
+  "documentation": "https://github.com/Meatgiffel/HAStoker",
   "integration_type": "device",
   "iot_class": "cloud_polling",
   "requirements": [],
-  "version": "0.2.1"
+  "version": "0.2.2"
 }

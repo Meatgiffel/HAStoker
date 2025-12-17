@@ -1,4 +1,4 @@
-# StokerCloud Home Assistant integration (custom component)
+# HAStoker Home Assistant integration (custom component)
 
 Connects to `stokercloud.dk` using a username and exposes pellet furnace values as sensors.
 
@@ -51,15 +51,15 @@ Example (conceptual):
 
 1. Copy `custom_components/stokercloud` into your Home Assistant `config/custom_components/`.
 2. Restart Home Assistant.
-3. Add **StokerCloud** via **Settings → Devices & services → Add integration**.
+3. Add **HAStoker** via **Settings → Devices & services → Add integration**.
 
 ## Install (HACS)
 
 1. Ensure you have **HACS** installed in Home Assistant.
 2. In **HACS → Integrations → (⋮) Custom repositories**, add this GitHub repo as type **Integration**.
-3. Install **StokerCloud** from HACS.
+3. Install **HAStoker** from HACS.
 4. Restart Home Assistant.
-5. Add **StokerCloud** via **Settings → Devices & services → Add integration**.
+5. Add **HAStoker** via **Settings → Devices & services → Add integration**.
 
 ## Using the event log in HA
 

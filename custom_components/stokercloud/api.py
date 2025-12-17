@@ -11,6 +11,7 @@ from .const import (
     CONTROLLER_DATA_PATH,
     DEFAULT_SCREEN,
     EVENT_DATA_PATH,
+    LOGIN_PATH,
     TRANSLATION_BASE,
 )
 

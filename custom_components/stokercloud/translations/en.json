@@ -1,0 +1,19 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to StokerCloud",
+        "description": "Enter your StokerCloud username (no password is required).",
+        "data": {
+          "username": "Username"
+        }
+      }
+    },
+    "error": {
+      "auth": "Login failed. Check the username.",
+      "cannot_connect": "Failed to connect to StokerCloud.",
+      "unknown": "Unexpected error."
+    }
+  }
+}
+

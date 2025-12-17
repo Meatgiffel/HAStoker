@@ -52,12 +52,6 @@ def _get_list_value(
     return item.get("value")
 
 
-def _get_misc_clock(data: dict[str, Any]) -> str | None:
-    clock = data.get("miscdata", {}).get("clock", {})
-    value = clock.get("value")
-    return None if value in (None, "", "N/A") else str(value)
-
-
 def _get_front_value(data: dict[str, Any], front_id: str) -> Any | None:
     item = _find_id(data.get("frontdata"), front_id)
     if not item:
@@ -360,15 +354,6 @@ SENSORS: tuple[StokerCloudSensorSpec, ...] = (
             state_class=SensorStateClass.MEASUREMENT,
         ),
         lambda data: _as_float(_get_list_value(data, "dhwdata", "3")),
-    ),
-    # Misc (clock shown on page)
-    StokerCloudSensorSpec(
-        SensorEntityDescription(
-            key="clock",
-            name="Clock",
-            icon="mdi:clock-outline",
-        ),
-        lambda data: _get_misc_clock(data),
     ),
 )
 
